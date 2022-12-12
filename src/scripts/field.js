@@ -9,5 +9,8 @@ export const addPlant = (seedObj) => {
 }
 
 export const usePlants = () => {
-    return plants
+    
+    return plants.map(plant => ({...plant}))
 }
+
+
